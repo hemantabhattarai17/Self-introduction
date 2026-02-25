@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hemanta Bhattarai | Interactive Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="animated-bg"></div>
+  <div class="overlay-gradient"></div>
+
+  <header class="main-header">
+    <div class="logo-area">
+      <a href="index.html" class="home-link" aria-label="Go to home page">
+        <img src="profile_pic.jpg" alt="Hemanta Bhattarai" class="profile-pic" />
+      </a>
+      <div>
+        <h1>Hemanta Bhattarai</h1>
+        <p id="subtitle">Computer Science Student · Builder of Fun Things</p>
+      </div>
+    </div>
+    <div class="header-controls">
+      <div class="lang-switcher">
+        <button id="langMenuToggle" class="pill-button lang-toggle" aria-label="Choose website language">
+          🌐 English
+        </button>
+        <div id="langMenu" class="lang-menu" aria-label="Language menu">
+          <button class="lang-option" data-lang="en">🇬🇧 English</button>
+          <button class="lang-option" data-lang="ne">🇳🇵 नेपाली</button>
+          <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+          <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+          <button class="lang-option" data-lang="zh">🇨🇳 中文</button>
+          <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+        </div>
+      </div>
+      <button id="downloadPdf" class="pill-button" aria-label="Download this website as PDF">⬇ PDF</button>
+      <button id="themeToggle" class="pill-button" aria-label="Toggle dark/light theme">🌞 Light</button>
+      <button id="scrollDownBtn" class="pill-button primary" aria-label="Scroll down to content">⬇ Scroll</button>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2 id="sidebarTitle">Explore</h2>
+      <input type="search" id="siteSearch" placeholder="Search this site..." aria-label="Search this website" />
+    </div>
+    <nav class="sidebar-nav">
+      <button id="sidebarMoviesBtn" data-target="movies" class="sidebar-item">🎬 Recommended Movies</button>
+      <button id="sidebarMusicBtn" data-target="music" class="sidebar-item">🎵 Recommended Music</button>
+      <button id="sidebarProjectsBtn" data-target="projects" class="sidebar-item">🎮 Projects & Games</button>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="hero" class="section fade-section">
+      <div class="hero-content">
+        <h2 id="heroTitle">Welcome to my interactive world</h2>
+        <p id="heroText">
+          I’m Hemanta, a curious computer science student who loves mixing code with creativity.
+          Scroll, click, and play around — this website is designed to be as fun and dynamic as the projects I enjoy building.
+        </p>
+        <div class="hero-tags">
+          <span id="heroTag1">Front-End Explorer</span>
+          <span id="heroTag2">Problem Solver</span>
+          <span id="heroTag3">Game Enthusiast</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section fade-section">
+      <h2 id="skillsTitle">Skills</h2>
+      <p id="skillsIntro" class="section-intro">
+        A blend of technical skills and creative problem solving. Always learning, always experimenting.
+      </p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3 id="skillWebTitle">Web Development</h3>
+          <p id="skillWebText">HTML, CSS, JavaScript, responsive layouts, and building interactive experiences that feel alive.</p>
+        </div>
+        <div class="skill-card">
+          <h3 id="skillProgTitle">Programming</h3>
+          <p id="skillProgText">Strong foundations in algorithms, data structures, and writing clean, readable code.</p>
+        </div>
+        <div class="skill-card">
+          <h3 id="skillCreativeTitle">Creative Projects</h3>
+          <p id="skillCreativeText">Small games, playful UIs, and experiments that make learning computer science fun.</p>
+        </div>
+        <div class="skill-card">
+          <h3 id="skillCollabTitle">Collaboration</h3>
+          <p id="skillCollabText">Communicating ideas clearly, working in teams, and turning concepts into working prototypes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section fade-section">
+      <h2 id="resumeTitle">Resume Timeline</h2>
+      <p id="resumeIntro" class="section-intro">
+        A quick journey through my academic and project milestones. Details live in my resume below.
+      </p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 id="resStudyTitle">Computer Science Studies</h3>
+            <span id="resStudyTime" class="timeline-time">Present</span>
+            <p id="resStudyText">Diving deep into core CS subjects, with a special interest in front-end development and interactive systems.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 id="resProjectsTitle">Personal Projects</h3>
+            <span id="resProjectsTime" class="timeline-time">Ongoing</span>
+            <p id="resProjectsText">Building small games, experimenting with animations, and creating fun UI ideas like this website.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3 id="resFutureTitle">Future Goals</h3>
+            <span id="resFutureTime" class="timeline-time">Soon</span>
+            <p id="resFutureText">Internships, open-source contributions, and more polished projects that push my creativity and skills.</p>
+          </div>
+        </div>
+      </div>
+      <div class="resume-download">
+        <a href="Fake-Resume.pdf" download class="pill-button primary">
+          <span id="resumeDownloadText">Download Resume (PDF)</span>
+        </a>
+        <p id="resumeNote" class="resume-note">This is a sample / fake resume file referenced as <code>Fake-Resume.pdf</code>.</p>
+      </div>
+    </section>
+
+    <section id="movies" class="section fade-section">
+      <h2 id="moviesTitle">Recommended Movies</h2>
+      <p id="moviesIntro" class="section-intro">
+        A few Nepali movies I recommend for a good time. Click a card to watch directly inside this page.
+      </p>
+      <div class="media-grid">
+        <article class="media-card" data-video="https://www.youtube.com/embed/SQG-vIuCe_4?start=3700">
+          <img src="darpan.jpg" alt="Darpan Chaya" />
+          <div class="media-info">
+            <h3>Darpan Chaya</h3>
+            <p id="darpanDesc">A classic emotional journey with music, friendship, and drama.</p>
+          </div>
+        </article>
+        <article class="media-card" data-video="https://www.youtube.com/embed/lCgtmgiII7M?start=3393">
+          <img src="oon.jpg" alt="Oonko Sweater" />
+          <div class="media-info">
+            <h3>Oonko Sweater</h3>
+            <p id="oonDesc">A heartfelt story wrapped in warmth, humor, and nostalgia.</p>
+          </div>
+        </article>
+        <article class="media-card" data-video="https://www.youtube.com/embed/w1oGUb5Nw7w?start=5196">
+          <img src="dk.jpg" alt="Dimakh Kharab" />
+          <div class="media-info">
+            <h3>Dimakh Kharab</h3>
+            <p id="dimakhDesc">Fun, chaos, and plenty of moments to make your mind spin (in a good way).</p>
+          </div>
+        </article>
+      </div>
+      <div class="video-player" id="moviePlayer">
+        <h3 id="nowPlayingTitle">Now Playing</h3>
+        <div class="video-frame-wrapper">
+          <iframe id="movieIframe" src="" title="Movie player" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <p id="videoHint" class="video-hint">Choose a movie card above to start watching.</p>
+      </div>
+    </section>
+
+    <section id="music" class="section fade-section">
+      <h2 id="musicTitle">Recommended Music</h2>
+      <p id="musicIntro" class="section-intro">
+        Some tracks to keep you energized while you explore the site or code along.
+      </p>
+      <div class="media-grid">
+        <article class="music-card">
+          <img src="danza.jpg" alt="Danza Kuduro" />
+          <div class="media-info">
+            <h3>Danza Kuduro</h3>
+            <p id="danzaDesc">High energy, perfect for getting into a flow state.</p>
+            <audio controls id="audioDanza">
+              <source src="danza.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-controls">
+              <label>
+                <span id="volumeLabel">Volume</span>
+                <input type="range" min="0" max="1" step="0.01" data-audio-target="audioDanza" />
+              </label>
+              <a id="danzaDownload" href="danza.mp3" download class="pill-button">Download</a>
+            </div>
+          </div>
+        </article>
+        <article class="music-card">
+          <img src="gulabi.jpg" alt="Rang Saari Gulabi" />
+          <div class="media-info">
+            <h3>Rang Saari Gulabi</h3>
+            <p id="gulabiDesc">Colorful vibes and feel-good energy.</p>
+            <audio controls id="audioGulabi">
+              <source src="gulabi.mp3" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <div class="audio-controls">
+              <label>
+                <span>Volume</span>
+                <input type="range" min="0" max="1" step="0.01" data-audio-target="audioGulabi" />
+              </label>
+              <a id="gulabiDownload" href="gulabi.mp3" download class="pill-button">Download</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section fade-section">
+      <h2 id="projectsTitle">Projects & Games</h2>
+      <p id="projectsIntro" class="section-intro">
+        Playable mini-experiences built with web technologies. Try not to get too addicted!
+      </p>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Flappy Birds</h3>
+          <p id="flappyDesc">A browser version of the classic flappy-style game. Tap or press space to fly.</p>
+          <canvas id="flappyCanvas" width="420" height="560" aria-label="Flappy Birds game"></canvas>
+          <div class="project-controls">
+            <button id="flappyStart" class="pill-button primary">Start / Restart</button>
+            <span id="flappyScore">Score: 0</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Hangman</h3>
+          <p id="hangmanDesc">Guess the secret word letter by letter. Can you solve it in time?</p>
+          <div id="hangmanGame" class="hangman-game">
+            <div class="hangman-word" id="hangmanWord"></div>
+            <div class="hangman-status">
+              <span id="hangmanMessage"></span>
+              <span id="hangmanAttempts"></span>
+            </div>
+            <div class="hangman-letters" id="hangmanLetters"></div>
+            <button id="hangmanRestart" class="pill-button">New Word</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3 id="habitTitle">Habit Tracker</h3>
+          <p id="habitDesc">Create daily habits, mark them done, and keep your streaks alive.</p>
+          <div id="habitTracker" class="habit-tracker">
+            <div class="habit-form">
+              <input
+                type="text"
+                id="habitNameInput"
+                placeholder="Add a new habit (e.g., Code 30 minutes)"
+                aria-label="New habit name"
+              />
+              <button id="habitAddBtn" class="pill-button primary">Add</button>
+            </div>
+            <div id="habitList" class="habit-list" aria-live="polite"></div>
+            <p id="habitTip" class="habit-tip">
+              Streaks are counted per day. Mark a habit “Done today” once per day to keep it going.
+            </p>
+            <a href="habit-tracker.html" target="_blank" id="habitOpenFull" class="pill-button">
+              Open full habit tracker
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location-weather" class="section fade-section">
+      <h2 id="locationTitle">Location & Live Weather</h2>
+      <p id="locationIntro" class="section-intro">
+        A quick glimpse of where I am in the world and what the weather looks like right now.
+      </p>
+      <div class="location-weather-grid">
+        <div class="map-card">
+          <h3 id="mapTitle">My Location</h3>
+          <p id="mapIntro">Currently set to Kathmandu, Nepal. You can customize the map URL to your actual location if needed.</p>
+          <div class="map-frame-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.139664833386!2d85.31995041550444!3d27.717245982786936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190a94a42f3d%3A0x78a2a7f6b0e4abd2!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1700000000000"
+              width="100%"
+              height="250"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Kathmandu%2C%20Nepal"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pill-button"
+            id="mapOpenButton"
+          >
+            Open in Google Maps
+          </a>
+        </div>
+        <div class="weather-card">
+          <h3 id="weatherTitle">Live Weather</h3>
+          <p id="weatherLocation" class="weather-location">Kathmandu, Nepal (via Open-Meteo API)</p>
+          <div id="weatherContent" class="weather-content">
+            <p>Loading current weather...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">⬆</button>
+
+  <section id="chatbot" class="chatbot">
+    <button id="chatToggle" class="chat-toggle" aria-label="Open assistant chat">AI</button>
+    <div class="chat-window" aria-live="polite">
+      <header class="chat-header">
+        <h3 id="chatTitle">Hemanta's AI Guide</h3>
+        <button id="chatClose" class="chat-close" aria-label="Close chat">✕</button>
+      </header>
+      <div class="chat-body" id="chatBody">
+        <div class="chat-message bot">
+          <p id="chatIntro">Hi! I’m your AI guide. Ask me to navigate (e.g., “Go to skills”), change theme (“dark mode”), or explain parts of the site. You can also use voice with the mic button.</p>
+        </div>
+      </div>
+      <footer class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Ask me anything..." />
+        <button id="voiceBtn" class="icon-button" aria-label="Voice command">🎙</button>
+        <button id="chatSend" class="icon-button" aria-label="Send message">➤</button>
+      </footer>
+      <div id="voiceStatus" class="voice-status" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
